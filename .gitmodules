@@ -1,0 +1,3 @@
+[submodule "raspivid_stream"]
+	path = raspivid_stream
+	url = git@github.com:aallaire91/raspivid_stream.git
