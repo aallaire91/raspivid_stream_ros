@@ -52,7 +52,7 @@ def start_decode_process(pipe):
 
 def start_stream_server_process(pipe,port):
     rel_script_path = os.path.join("raspivid_stream","scripts","receive_stream_remote.sh")
-    script_path = os.path.join(rospack.get_path('raspivid_stream'),script_path)
+    script_path = os.path.join(rospack.get_path('raspivid_stream_ros'),script_path)
     srv_cmd = ["/bin/bash",script_path,str(pipe),str(port)]
     proc = sp.Popen(srv_cmd)
     time.sleep(0.1)
